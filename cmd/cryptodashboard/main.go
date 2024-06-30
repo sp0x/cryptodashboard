@@ -2,14 +2,15 @@ package main
 
 import (
 	"context"
-	"cryptodashboard/config"
-	"cryptodashboard/datasources/coingecko"
-	"cryptodashboard/events"
-	"cryptodashboard/models"
 	"fmt"
 	"net/http"
 	"os"
 	"time"
+
+	"github.com/sp0x/cryptodashboard/config"
+	"github.com/sp0x/cryptodashboard/datasources/coingecko"
+	"github.com/sp0x/cryptodashboard/events"
+	"github.com/sp0x/cryptodashboard/models"
 )
 
 func main() {

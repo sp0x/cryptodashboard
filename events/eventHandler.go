@@ -2,10 +2,11 @@ package events
 
 import (
 	"bytes"
-	"cryptodashboard/models"
 	"encoding/json"
 	"fmt"
 	"net/http"
+
+	"github.com/sp0x/cryptodashboard/models"
 )
 
 type EventHandler struct {

@@ -1,4 +1,4 @@
-module cryptodashboard
+module github.com/sp0x/cryptodashboard
 
 go 1.22.4
 

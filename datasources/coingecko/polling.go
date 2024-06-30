@@ -2,12 +2,13 @@ package coingecko
 
 import (
 	"context"
-	"cryptodashboard/models"
 	"encoding/json"
 	"fmt"
 	"sort"
 	"strings"
 	"time"
+
+	"github.com/sp0x/cryptodashboard/models"
 )
 
 func StartPolling(ctx context.Context,
