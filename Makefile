@@ -4,7 +4,7 @@ all: build
 
 build:
 	@echo "Building..."
-	@go build -o bin/$(APP_NAME) cmd/$(APP_NAME)/main.go
+	@go build -o bin/$(APP_NAME) main.go
 	@echo "Build complete"
 
 serve: build
