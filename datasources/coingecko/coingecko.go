@@ -18,8 +18,8 @@ type PriceValues map[string]float64
 
 type CoingeckoClient struct {
 	httpClient *http.Client
-	key string
-	baseUrl string
+	key        string
+	baseUrl    string
 }
 
 // Create a new function that will return a new instance of the coingecko struct.
@@ -30,8 +30,8 @@ func NewCoingeckoClient(httpClient *http.Client, key string, baseUrl string) *Co
 
 	return &CoingeckoClient{
 		httpClient: httpClient,
-		key: key,
-		baseUrl: baseUrl,
+		key:        key,
+		baseUrl:    baseUrl,
 	}
 }
 
@@ -43,7 +43,7 @@ func GetSimplePriceEndpoint(targetCurrency string, cryptoCurrencyIds []string) s
 	params.Add("include_24hr_vol", strconv.FormatBool(false))
 	params.Add("include_24hr_change", strconv.FormatBool(false))
 	params.Add("include_last_updated_at", strconv.FormatBool(false))
-    params.Add("precision", "4")
+	params.Add("precision", "4")
 	return fmt.Sprintf("/simple/price?%s", params.Encode())
 }
 
